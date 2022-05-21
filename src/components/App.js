@@ -8,6 +8,7 @@ import {CurrentUserContext} from "../contexts/CurrentUserContext"
 import EditProfilePopup from "./EditProfilePopup";
 import EditaAvatarPopup from "./EditaAvatarPopup";
 import AddPlacePopup from "./AddPlacePopup";
+import Login from "./Login";
 
 function App() {
 
@@ -123,6 +124,7 @@ function App() {
             <div className="wrapper">
                 <div className="page">
                     <Header/>
+                    <Login/>
 
                     <Main onEditAvatar={handleEditAvatarClick}
                           onEditProfile={handleEditProfileClick}
