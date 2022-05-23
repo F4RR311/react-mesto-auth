@@ -9,6 +9,7 @@ import EditProfilePopup from "./EditProfilePopup";
 import EditaAvatarPopup from "./EditaAvatarPopup";
 import AddPlacePopup from "./AddPlacePopup";
 import Login from "./Login";
+import Register from "./Register";
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
     const [selectedCard, setSelectedCard] = useState(null);
     const [currentUser, setCurrentUser] = useState({})
     const [cards, setCards] = useState([]);
+    const [loggedIn, setLoggedIn] = useState(false);
 
     useEffect(() => {
         Promise.all([api.getProfile(), api.getInitialCards()])
@@ -124,7 +126,14 @@ function App() {
             <div className="wrapper">
                 <div className="page">
                     <Header/>
-                    <Login/>
+                    <Route path="/sign-in">
+
+                        <Login/>
+                    </Route>
+
+                    <Route path="/sign-up">
+                        <Register/>
+                    </Route>
 
                     <Main onEditAvatar={handleEditAvatarClick}
                           onEditProfile={handleEditProfileClick}

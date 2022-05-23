@@ -16,25 +16,26 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/main" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0bb1b516-aa2b-45af-9a98-8dd011eedf39" name="Default Changelist" comment="сверстан логин">
-      <change afterPath="$PROJECT_DIR$/src/blocks/login/__button/login__button.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blocks/login/__form/login__form.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blocks/login/__input/login__input.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blocks/login/__title/login__title.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/blocks/login/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ProtectedRoute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Register.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +45,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -121,7 +122,9 @@
       <option name="presentableId" value="Default" />
       <updated>1653160257197</updated>
       <workItem from="1653160258246" duration="512000" />
-      <workItem from="1653160798191" duration="5412000" />
+      <workItem from="1653160798191" duration="6702000" />
+      <workItem from="1653210051929" duration="5498000" />
+      <workItem from="1653332156134" duration="3328000" />
     </task>
     <task id="LOCAL-00001" summary="перенос проекта">
       <created>1653160394485</created>
@@ -144,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653160655206</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="сверстан логин">
+      <created>1653170547815</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1653170547815</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -155,7 +165,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -172,33 +194,37 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="828" y="408" key="#ESLint/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1653163904520" />
+    <state x="715" y="340" key="#Notifications" timestamp="1653332328569">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="715" y="340" key="#Notifications/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1653332328569" />
     <state x="730" y="318" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1653164042979">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="730" y="318" key="#com.intellij.fileTypes.FileTypeChooser/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1653164042979" />
-    <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1653166881425">
+    <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1653333058629">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="740" y="271" key="FileChooserDialogImpl/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1653166881425" />
-    <state width="1877" height="279" key="GridCell.Tab.0.bottom" timestamp="1653164016633">
+    <state x="740" y="271" key="FileChooserDialogImpl/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1653333058629" />
+    <state width="1877" height="279" key="GridCell.Tab.0.bottom" timestamp="1653332380824">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.bottom/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1653164016633" />
-    <state width="1877" height="279" key="GridCell.Tab.0.center" timestamp="1653164016633">
+    <state width="1877" height="279" key="GridCell.Tab.0.bottom/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1653332380824" />
+    <state width="1877" height="279" key="GridCell.Tab.0.center" timestamp="1653332380824">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.center/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1653164016633" />
-    <state width="1877" height="279" key="GridCell.Tab.0.left" timestamp="1653164016633">
+    <state width="1877" height="279" key="GridCell.Tab.0.center/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1653332380824" />
+    <state width="1877" height="279" key="GridCell.Tab.0.left" timestamp="1653332380824">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.left/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1653164016633" />
-    <state width="1877" height="279" key="GridCell.Tab.0.right" timestamp="1653164016633">
+    <state width="1877" height="279" key="GridCell.Tab.0.left/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1653332380824" />
+    <state width="1877" height="279" key="GridCell.Tab.0.right" timestamp="1653332380824">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.right/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1653164016633" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1653160656906">
+    <state width="1877" height="279" key="GridCell.Tab.0.right/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1653332380824" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1653170551362">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1653160656906" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1653170551362" />
   </component>
 </project>

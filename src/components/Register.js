@@ -1,6 +1,6 @@
 import React from "react";
 
-const Login = () => {
+const Register = () => {
 
     return (
         <div className="login">
@@ -9,7 +9,7 @@ const Login = () => {
                 <input className="login__input" placeholder="Email"/>
                 <input className="login__input" type="password" placeholder="Пароль"/>
                 <button className="login__button" type="submit" onClick={() => {
-                }}>Войти
+                }}>Зарегистрироваться
                 </button>
             </form>
 
@@ -21,4 +21,4 @@ const Login = () => {
 
 }
 
-export default Login;
+export default Register;
