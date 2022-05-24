@@ -11,7 +11,12 @@ import AddPlacePopup from "./AddPlacePopup";
 import Login from "./Login";
 import Register from "./Register";
 import * as auth from '../utils/auth'
-import {useNavigate} from "react-router-dom";
+import {Routes, Route, Navigate, useNavigate} from "react-router-dom";
+import ProtectedRoute from "./ProtectedRoute";
+import InfoTooltip from "./InfoTooltip";
+import resolve from "../images/resolve.svg"
+import reject from "../images/reject.svg"
+
 
 function App() {
 
@@ -22,7 +27,7 @@ function App() {
     const [selectedCard, setSelectedCard] = useState(null);
     const [currentUser, setCurrentUser] = useState({})
     const [cards, setCards] = useState([]);
-    const [loggedIn, setLoggedIn] = useState(false);
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [emailName, setEmailName] = useState(null);
     const [popupImage, setPopupImage] = useState('');
     const [popupTitle, setPopupTitle] = useState('');
@@ -32,7 +37,7 @@ function App() {
         auth.registerUser(email, password).then(() => {
             setPopupImage(resolve);
             setPopupTitle('Вы успешно зарегистрировались');
-            navigate('/');
+            navigate('/sign-in');
         })
             .catch(() => {
                 setPopupImage(reject);
@@ -42,9 +47,9 @@ function App() {
     }
 
     function onLogin(email, password) {
-        auth.loginUser(email, password).then(() => {
+        auth.loginUser(email, password).then((res) => {
             localStorage.setItem("jwt", res.token);
-            setLoggedIn(true);
+            setIsLoggedIn(true);
             setEmailName(email);
             navigate('/');
         })
@@ -54,27 +59,29 @@ function App() {
                 handleInfoTooltip();
             })
     }
-    //
+
+
     useEffect(() => {
         const jwt = localStorage.getItem("jwt");
         if (jwt) {
             auth.getToken(jwt).then((res) => {
                 if (res) {
-                    setLoggedIn(true);
+                    setIsLoggedIn(true);
                     setEmailName(res.data.email);
                 }
             })
-                .catch(() => {
+                .catch((err) => {
                     console.log(err)
                 })
         }
     }, [])
 
-    useEffect(()=>{
-        if(loggedIn === true){
+    useEffect(() => {
+        if (isLoggedIn === true) {
             navigate('/');
         }
-    },[loggedIn, navigate])
+    }, [isLoggedIn, navigate])
+
     useEffect(() => {
         Promise.all([api.getProfile(), api.getInitialCards()])
             .then(([user, cards]) => {
@@ -180,8 +187,8 @@ function App() {
         }
     }, [isEditProfilePopupOpen, isAddPlacePopupOpen, isEditAvatarPopupOpen, isAddPlacePopupOpen, selectedCard]);
 
-    function signOut(){
-        setLoggedIn(false);
+    function signOut() {
+        setIsLoggedIn(false);
         setEmailName(null);
         navigate("/sign-in");
         localStorage.removeItem("jwt");
@@ -191,29 +198,42 @@ function App() {
         <CurrentUserContext.Provider value={currentUser}>
             <div className="wrapper">
                 <div className="page">
-                    <Header/>
+
                     <Routes>
+                        <Route path="/sign-in" element={
+                            <>
+                                <Header title="Регистрация" route="/sign-up"/>
+                                <Login onLogin={onLogin}/>
+                            </>
+                        }/>
 
+                        <Route path="/sign-up" element={
+                            <>
+                                <Header title="Войти" route="/sign-in"/>
+                                <Register onRegister={onRegister}/>
+                            </>
+                        }/>
 
-                        <Route path="/sign-in">
+                        <Route exact="/" element={
+                            <>
+                                <Header title="Выйти" mail={emailName} onClick={signOut}/>
+                                <ProtectedRoute
+                                    component={Main}
+                                    isLogged={isLoggedIn}
+                                    onEditAvatar={handleEditAvatarClick}
+                                    onEditProfile={handleEditProfileClick}
+                                    onAddPlace={handleEditPlaceClick}
+                                    onCardClick={handleCardClick}
+                                    cards={cards}
+                                    onCardLike={handleCardLike}
+                                    onCardDelete={handleCardDelete}
+                                />
+                                <Footer/>
+                            </>
+                        }/>
 
-                            <Login/>
-                        </Route>
-
-                        <Route path="/sign-up">
-                            <Register/>
-                        </Route>
+                        <Route path="*" element={<Navigate to={isLoggedIn ? "/" : "/sign-in"}/>}/>
                     </Routes>
-                    <Main onEditAvatar={handleEditAvatarClick}
-                          onEditProfile={handleEditProfileClick}
-                          onAddPlace={handleEditPlaceClick}
-                          onCardClick={handleCardClick}
-                          cards={cards}
-                          onCardLike={handleCardLike}
-                          onCardDelete={handleCardDelete}
-                    />
-                    <Footer/>
-
                     <EditaAvatarPopup
                         isOpen={isEditAvatarPopupOpen}
                         onClose={closeAllPopups}
@@ -234,6 +254,11 @@ function App() {
                         isOpen={isEditProfilePopupOpen}
                         onUpdateUser={handleUpdateUser}
                     />
+                    <InfoTooltip
+                        image={popupImage}
+                        title={popupTitle}
+                        isOpen={infoTooltip}
+                        onClose={closeAllPopups}/>
                 </div>
             </div>
         </CurrentUserContext.Provider>
