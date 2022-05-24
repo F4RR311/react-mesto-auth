@@ -28,7 +28,7 @@ const Register = (props) => {
                 <button className="login__button" type="submit">Зарегистрироваться
                 </button>
             </form>
-            <p className="login__text"> Уже зарегистрированы? <Link className={"login__link"} to="/sign-in"/> Войти </p>
+            <p className="login__text"> Уже зарегистрированы? <Link className={"login__link"} to="/sign-in"> Войти</Link> </p>
         </section>
     )
 }

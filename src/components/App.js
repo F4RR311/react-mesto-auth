@@ -214,9 +214,9 @@ function App() {
                             </>
                         }/>
 
-                        <Route exact="/" element={
+                        <Route exact path="/" element={
                             <>
-                                <Header title="Выйти" mail={emailName} onClick={signOut}/>
+                                <Header title="Выйти" mail={emailName} onClick={signOut} route=""/>
                                 <ProtectedRoute
                                     component={Main}
                                     isLogged={isLoggedIn}
