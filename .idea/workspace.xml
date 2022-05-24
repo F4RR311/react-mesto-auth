@@ -26,15 +26,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0bb1b516-aa2b-45af-9a98-8dd011eedf39" name="Default Changelist" comment="сверстан логин">
-      <change afterPath="$PROJECT_DIR$/src/components/ProtectedRoute.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Register.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/auth.js" afterDir="false" />
+    <list default="true" id="0bb1b516-aa2b-45af-9a98-8dd011eedf39" name="Default Changelist" comment="develop auth">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +58,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../ten sprint/mesto-react" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Projects ReactJavaScriprt/demo-reposit" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -75,6 +69,7 @@
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2020.2.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -124,7 +119,8 @@
       <workItem from="1653160258246" duration="512000" />
       <workItem from="1653160798191" duration="6702000" />
       <workItem from="1653210051929" duration="5498000" />
-      <workItem from="1653332156134" duration="3328000" />
+      <workItem from="1653332156134" duration="3367000" />
+      <workItem from="1653418294644" duration="4630000" />
     </task>
     <task id="LOCAL-00001" summary="перенос проекта">
       <created>1653160394485</created>
@@ -154,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653170547815</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="develop auth">
+      <created>1653338845037</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1653338845037</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,7 +190,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="перенос проекта" />
     <MESSAGE value="сверстан логин" />
-    <option name="LAST_COMMIT_MESSAGE" value="сверстан логин" />
+    <MESSAGE value="develop auth" />
+    <option name="LAST_COMMIT_MESSAGE" value="develop auth" />
   </component>
   <component name="WindowStateProjectService">
     <state x="828" y="408" key="#ESLint" timestamp="1653163904520">
@@ -202,29 +206,29 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="730" y="318" key="#com.intellij.fileTypes.FileTypeChooser/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1653164042979" />
-    <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1653333058629">
+    <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1653421632581">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="740" y="271" key="FileChooserDialogImpl/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1653333058629" />
-    <state width="1877" height="279" key="GridCell.Tab.0.bottom" timestamp="1653332380824">
+    <state x="740" y="271" key="FileChooserDialogImpl/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1653421632581" />
+    <state width="1877" height="279" key="GridCell.Tab.0.bottom" timestamp="1653420256466">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.bottom/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1653332380824" />
-    <state width="1877" height="279" key="GridCell.Tab.0.center" timestamp="1653332380824">
+    <state width="1877" height="279" key="GridCell.Tab.0.bottom/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1653420256466" />
+    <state width="1877" height="279" key="GridCell.Tab.0.center" timestamp="1653420256466">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.center/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1653332380824" />
-    <state width="1877" height="279" key="GridCell.Tab.0.left" timestamp="1653332380824">
+    <state width="1877" height="279" key="GridCell.Tab.0.center/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1653420256466" />
+    <state width="1877" height="279" key="GridCell.Tab.0.left" timestamp="1653420256466">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.left/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1653332380824" />
-    <state width="1877" height="279" key="GridCell.Tab.0.right" timestamp="1653332380824">
+    <state width="1877" height="279" key="GridCell.Tab.0.left/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1653420256466" />
+    <state width="1877" height="279" key="GridCell.Tab.0.right" timestamp="1653420256466">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1877" height="279" key="GridCell.Tab.0.right/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1653332380824" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1653170551362">
+    <state width="1877" height="279" key="GridCell.Tab.0.right/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1653420256466" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1653338848647">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1653170551362" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/-1920.0.1536.826/0.0.1920.1032@0.0.1920.1032" timestamp="1653338848647" />
   </component>
 </project>
