@@ -67,13 +67,6 @@
 - ReactJS
 
 
-## Скриншот:
-<details><summary><b>Развернуть</b></summary>
-
-[![react-mesto-auth-1](https://user-images.githubusercontent.com/86494748/146587920-5a90fa4f-9e7b-4092-8842-e525a324578e.jpg)](https://ia-stepanov.github.io/react-mesto-auth/)
-[![react-mesto-auth-2](https://user-images.githubusercontent.com/86494748/146587923-e324573f-fb43-4cfb-9b41-ec64308c2524.jpg)](https://ia-stepanov.github.io/react-mesto-auth/)
-
-</details>
 
 ## Ссылка на сайт:
 https://f4rr311.github.io/react-mesto-auth/
