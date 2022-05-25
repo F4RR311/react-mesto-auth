@@ -88,6 +88,9 @@ function App() {
                 setCurrentUser(user)
                 setCards(cards)
             })
+            .catch((err) => {
+            console.error(err);
+        });
     }, []);
 
     function handleEditAvatarClick() {
@@ -164,7 +167,7 @@ function App() {
 
     function handleAddPlaceSubmit(data) {
         api.addCard(data).then((newCard) => {
-            setCards([...cards, newCard]);
+            setCards([newCard, ...cards]);
             closeAllPopups();
         }).catch((err) => {
             console.error(err);
